@@ -1,0 +1,10 @@
+---
+apiVersion: notification.toolkit.fluxcd.io/v1beta3
+kind: Provider
+metadata:
+  name: msteams-alert-provider
+  namespace: flux-system
+spec:
+  secretRef:
+    name: msteams-webhook
+  type: msteams
